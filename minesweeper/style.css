@@ -1,0 +1,15 @@
+.field {
+  max-width:600px;
+  padding-left: 40px;
+  padding-right: 40px;
+  
+  display: grid;
+  grid-template-columns: repeat(10, 25px);
+}
+
+.button {
+
+  height: 25px;
+  font-size: 14px;
+  background-color: lightslategrey;
+}
