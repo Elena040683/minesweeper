@@ -1,15 +1,65 @@
-.field {
-  max-width:600px;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-style: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30 auto;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.board {
+  width:500px;
+  height: 500px;
+  border: 10px solid rgb(121, 125, 125);
+  background-color: rgb(204, 205, 204);
+  margin: 0 auto;
   
-  display: grid;
-  grid-template-columns: repeat(10, 25px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.button {
-
-  height: 25px;
+.cell {
+  margin: 0;
+  width: 48px;
+  height: 48px;
   font-size: 14px;
-  background-color: lightslategrey;
+  border: 1px solid rgb(244, 239, 239);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.cell-checked {
+  background-color: rgb(153, 157, 160);
+}
+
+.smile-button {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(75, 87, 222);
+  border: none;
+  margin-bottom: 20px;
+}
+
