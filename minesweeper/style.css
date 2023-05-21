@@ -16,6 +16,7 @@ body {
   margin: 30 auto;
   padding-left: 40px;
   padding-right: 40px;
+  margin-top: 10px;
 }
 
 .title {
@@ -23,6 +24,13 @@ body {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .board {
@@ -39,7 +47,6 @@ body {
 }
 
 .cell {
-  margin: 0;
   width: 48px;
   height: 48px;
   font-size: 14px;
@@ -58,8 +65,49 @@ body {
   width: 50px;
   height: 50px;
   font-size: 20px;
-  background-color: rgb(75, 87, 222);
   border: none;
-  margin-bottom: 20px;
+  
 }
 
+.new-game {
+  width: 130px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+  padding: 5px;
+  background-color: rgb(100, 149, 237);
+  border: none;
+}
+
+.lose {
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+  margin-top: 10px;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.won {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(107, 174, 219);
+  margin-top: 10px;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.bomb1 {
+  color: green;
+}
+
+.bomb2 {
+  color: blue;
+}
+
+.bomb3 {
+  color: tomato;
+}
+
+.bomb4 {
+  color: blueviolet;
+}
